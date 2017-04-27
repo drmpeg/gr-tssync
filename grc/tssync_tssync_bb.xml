@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>TS Synchronizer</name>
+  <key>tssync_tssync_bb</key>
+  <category>[Core]/Digital Television/DVB</category>
+  <import>import tssync</import>
+  <make>tssync.tssync_bb()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>
