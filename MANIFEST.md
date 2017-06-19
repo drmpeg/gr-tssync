@@ -1,16 +1,16 @@
-title: The TSSYNC OOT Module
-brief: Short description of gr-tssync
+title: The TSSRC OOT Module
+brief: Short description of gr-tssrc
 tags: # Tags are arbitrary, but look at CGRAN what other authors are using
-  - sdr
+  - sdr, gnu, radio, dvb-s2, dvb-s, mpeg2, ts, null, packet
 author:
-  - Author Name <authors@email.address>
+  - Matthew Zachary <>
 copyright_owner:
-  - Copyright Owner 1
+  - Matthew Zachary
 license:
-#repo: # Put the URL of the repository here, or leave blank for default
-#website: <module_website> # If you have a separate project website, put it here
-#icon: <icon_url> # Put a URL to a square image here that will be used as an icon on CGRAN
+#repo: 
+#website: 
+#icon: 
 ---
-A longer, multi-line description of gr-tssync.
+A longer, multi-line description of gr-tssrc.
 You may use some *basic* Markdown here.
 If left empty, it will try to find a README file instead.

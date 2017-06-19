@@ -19,14 +19,14 @@
 # The presence of this file turns this directory into a Python package
 
 '''
-This is the GNU Radio TSSYNC module. Place your Python package
+This is the GNU Radio TSSRC module. Place your Python package
 description here (python/__init__.py).
 '''
 
-# import swig generated symbols into the tssync namespace
+# import swig generated symbols into the tssrc namespace
 try:
 	# this might fail if the module is python-only
-	from tssync_swig import *
+	from tssrc_swig import *
 except ImportError:
 	pass
 

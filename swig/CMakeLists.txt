@@ -20,10 +20,10 @@
 ########################################################################
 # Check if there is C++ code at all
 ########################################################################
-if(NOT tssync_sources)
+if(NOT tssrc_sources)
 	MESSAGE(STATUS "No C++ sources... skipping swig/")
 	return()
-endif(NOT tssync_sources)
+endif(NOT tssrc_sources)
 
 ########################################################################
 # Include swig generation macros
@@ -43,23 +43,23 @@ foreach(incdir ${GNURADIO_RUNTIME_INCLUDE_DIRS})
     list(APPEND GR_SWIG_INCLUDE_DIRS ${incdir}/gnuradio/swig)
 endforeach(incdir)
 
-set(GR_SWIG_LIBRARIES gnuradio-tssync)
-set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/tssync_swig_doc.i)
+set(GR_SWIG_LIBRARIES gnuradio-tssrc)
+set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/tssrc_swig_doc.i)
 set(GR_SWIG_DOC_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
-GR_SWIG_MAKE(tssync_swig tssync_swig.i)
+GR_SWIG_MAKE(tssrc_swig tssrc_swig.i)
 
 ########################################################################
 # Install the build swig module
 ########################################################################
-GR_SWIG_INSTALL(TARGETS tssync_swig DESTINATION ${GR_PYTHON_DIR}/tssync)
+GR_SWIG_INSTALL(TARGETS tssrc_swig DESTINATION ${GR_PYTHON_DIR}/tssrc)
 
 ########################################################################
 # Install swig .i files for development
 ########################################################################
 install(
     FILES
-    tssync_swig.i
-    ${CMAKE_CURRENT_BINARY_DIR}/tssync_swig_doc.i
-    DESTINATION ${GR_INCLUDE_DIR}/tssync/swig
+    tssrc_swig.i
+    ${CMAKE_CURRENT_BINARY_DIR}/tssrc_swig_doc.i
+    DESTINATION ${GR_INCLUDE_DIR}/tssrc/swig
 )

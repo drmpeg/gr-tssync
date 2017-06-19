@@ -25,22 +25,22 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
-list(APPEND tssync_sources
-    tssync_bb_impl.cc
+list(APPEND tssrc_sources
+    tssrc_bb_impl.cc
 )
 
-set(tssync_sources "${tssync_sources}" PARENT_SCOPE)
-if(NOT tssync_sources)
+set(tssrc_sources "${tssrc_sources}" PARENT_SCOPE)
+if(NOT tssrc_sources)
 	MESSAGE(STATUS "No C++ sources... skipping lib/")
 	return()
-endif(NOT tssync_sources)
+endif(NOT tssrc_sources)
 
-add_library(gnuradio-tssync SHARED ${tssync_sources})
-target_link_libraries(gnuradio-tssync ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
-set_target_properties(gnuradio-tssync PROPERTIES DEFINE_SYMBOL "gnuradio_tssync_EXPORTS")
+add_library(gnuradio-tssrc SHARED ${tssrc_sources})
+target_link_libraries(gnuradio-tssrc ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
+set_target_properties(gnuradio-tssrc PROPERTIES DEFINE_SYMBOL "gnuradio_tssrc_EXPORTS")
 
 if(APPLE)
-    set_target_properties(gnuradio-tssync PROPERTIES
+    set_target_properties(gnuradio-tssrc PROPERTIES
         INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}/lib"
     )
 endif(APPLE)
@@ -51,7 +51,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 # Install built library files
 ########################################################################
 include(GrMiscUtils)
-GR_LIBRARY_FOO(gnuradio-tssync RUNTIME_COMPONENT "tssync_runtime" DEVEL_COMPONENT "tssync_devel")
+GR_LIBRARY_FOO(gnuradio-tssrc RUNTIME_COMPONENT "tssrc_runtime" DEVEL_COMPONENT "tssrc_devel")
 
 ########################################################################
 # Build and register unit test
@@ -60,22 +60,22 @@ include(GrTest)
 
 include_directories(${CPPUNIT_INCLUDE_DIRS})
 
-list(APPEND test_tssync_sources
-    ${CMAKE_CURRENT_SOURCE_DIR}/test_tssync.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_tssync.cc
+list(APPEND test_tssrc_sources
+    ${CMAKE_CURRENT_SOURCE_DIR}/test_tssrc.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_tssrc.cc
 )
 
-add_executable(test-tssync ${test_tssync_sources})
+add_executable(test-tssrc ${test_tssrc_sources})
 
 target_link_libraries(
-  test-tssync
+  test-tssrc
   ${GNURADIO_RUNTIME_LIBRARIES}
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
-  gnuradio-tssync
+  gnuradio-tssrc
 )
 
-GR_ADD_TEST(test_tssync test-tssync)
+GR_ADD_TEST(test_tssrc test-tssrc)
 
 ########################################################################
 # Print summary
