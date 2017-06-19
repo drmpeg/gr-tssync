@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="dir_a06b85178da2a567d2bf2071077bf355" kind="dir">
+    <compoundname>/home/pi/mux_dev/gr-tssrc/include/tssrc</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="tssrc__bb_8h">tssrc_bb.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pi/mux_dev/gr-tssrc/include/tssrc/"/>
+  </compounddef>
+</doxygen>

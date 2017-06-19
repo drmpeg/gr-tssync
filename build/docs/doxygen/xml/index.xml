@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.8">
+  <compound refid="classgr_1_1tssrc_1_1tssrc__bb" kind="class"><name>gr::tssrc::tssrc_bb</name>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb_1a9440d0131b465deffbbaaaabdcdb1e05" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb_1ae51e0cf69e6791aed76c351be35ddb7e" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1tssrc_1_1tssrc__bb__impl" kind="class"><name>gr::tssrc::tssrc_bb_impl</name>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb__impl_1a4c4511076aa8f7b681145e0726d7c64e" kind="variable"><name>file</name></member>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb__impl_1a80afde70fc26e1f9c3b82b9dee7246e6" kind="function"><name>tssrc_bb_impl</name></member>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb__impl_1a60adb3a023b02048d3088dc8d6971a4c" kind="function"><name>~tssrc_bb_impl</name></member>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb__impl_1aa76d8abbe114b9c912d05dcf6ba323e3" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1tssrc_1_1tssrc__bb__impl_1ad4f78dfdd3b84a7c406bc17b1bc048ac" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1tssrc" kind="namespace"><name>gr::tssrc</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a6b2e4bf1a772556c834bdac59eaabd67" kind="define"><name>TSSRC_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="tssrc__bb_8h" kind="file"><name>tssrc_bb.h</name>
+  </compound>
+  <compound refid="tssrc__bb__impl_8h" kind="file"><name>tssrc_bb_impl.h</name>
+    <member refid="tssrc__bb__impl_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kind="define"><name>TRUE</name></member>
+    <member refid="tssrc__bb__impl_8h_1aa93f0eb578d23995850d61f7d61c55c1" kind="define"><name>FALSE</name></member>
+    <member refid="tssrc__bb__impl_8h_1a19a5765d6e48eb59ca5d22f83aa6255b" kind="define"><name>MPEG_TS_PKT_LENGTH</name></member>
+    <member refid="tssrc__bb__impl_8h_1a8a96617e0909a967e231c32e2a050a63" kind="define"><name>MPEG_TS_SYNC_BYTE</name></member>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_a06b85178da2a567d2bf2071077bf355" kind="dir"><name>tssrc</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
