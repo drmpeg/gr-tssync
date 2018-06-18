@@ -1,6 +1,5 @@
-/* -*- c++ -*- */
 /* 
- * Copyright 2017 Ron Economos.
+ * Copyright 2017 Matt Zachary
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,38 +17,25 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_TSSYNC_TSSYNC_BB_H
-#define INCLUDED_TSSYNC_TSSYNC_BB_H
+#ifndef INCLUDED_TSSRC_TSSRC_BB_H
+#define INCLUDED_TSSRC_TSSRC_BB_H
 
-#include <tssync/api.h>
+#include <tssrc/api.h>
 #include <gnuradio/block.h>
 
 namespace gr {
-  namespace tssync {
+  namespace tssrc {
 
-    /*!
-     * \brief <+description of block+>
-     * \ingroup tssync
-     *
-     */
-    class TSSYNC_API tssync_bb : virtual public gr::block
+    class TSSRC_API tssrc_bb : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<tssync_bb> sptr;
+      typedef boost::shared_ptr<tssrc_bb> sptr;
 
-      /*!
-       * \brief Return a shared_ptr to a new instance of tssync::tssync_bb.
-       *
-       * To avoid accidental use of raw pointers, tssync::tssync_bb's
-       * constructor is in a private implementation
-       * class. tssync::tssync_bb::make is the public interface for
-       * creating new instances.
-       */
-      static sptr make();
+      static sptr make(const char* filename);
     };
 
-  } // namespace tssync
+  } // namespace tssrc
 } // namespace gr
 
-#endif /* INCLUDED_TSSYNC_TSSYNC_BB_H */
+#endif
 

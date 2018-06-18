@@ -22,5 +22,5 @@
 ########################################################################
 install(FILES
     api.h
-    tssync_bb.h DESTINATION include/tssync
+    tssrc_bb.h DESTINATION include/tssrc
 )

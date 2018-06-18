@@ -28,7 +28,7 @@
 #include <cppunit/XmlOutputter.h>
 
 #include <gnuradio/unittests.h>
-#include "qa_tssync.h"
+#include "qa_tssrc.h"
 #include <iostream>
 #include <fstream>
 
@@ -36,10 +36,10 @@ int
 main (int argc, char **argv)
 {
   CppUnit::TextTestRunner runner;
-  std::ofstream xmlfile(get_unittest_path("tssync.xml").c_str());
+  std::ofstream xmlfile(get_unittest_path("tssrc.xml").c_str());
   CppUnit::XmlOutputter *xmlout = new CppUnit::XmlOutputter(&runner.result(), xmlfile);
 
-  runner.addTest(qa_tssync::suite());
+  runner.addTest(qa_tssrc::suite());
   runner.setOutputter(xmlout);
 
   bool was_successful = runner.run("", false);

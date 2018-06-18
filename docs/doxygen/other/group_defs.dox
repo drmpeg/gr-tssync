@@ -1,6 +1,6 @@
 /*!
- * \defgroup block GNU Radio TSSYNC C++ Signal Processing Blocks
- * \brief All C++ blocks that can be used from the TSSYNC GNU Radio
+ * \defgroup block GNU Radio TSSRC C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the TSSRC GNU Radio
  *        module are listed here or in the subcategories below.
  *
  */

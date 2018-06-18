@@ -1,30 +1,32 @@
-# Copyright 2017 Ron Economos
+# Copyright 2017 Matthew Zachary
 #
-# This file is part of gr-tssync
+# This file is part of gr-tssrc
 #
-# gr-tssync is free software; you can redistribute it and/or modify
+# gr-tssrc is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3, or (at your option)
 # any later version.
 #
-# gr-tssync is distributed in the hope that it will be useful,
+# gr-tssrc is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with gr-tssync; see the file COPYING.  If not, write to
+# along with gr-tssrc; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 
-gr-tssync
-======
+gr-tssrc
+========
 
-Author: Ron Economos
-Email: <w6rz@comcast.net>
+Author: Matthew Zachary
+Email: <>
+
+Forked from the TS Sync block by drmpeg (Ron Economos)
 
 The goal of this project is to build a GNU Radio block that implements
-a Transport Stream sync byte synchronizer:
+a Transport Stream source with null packet insertion
 
 Build instructions:
 

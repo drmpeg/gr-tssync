@@ -1,8 +1,8 @@
 /*! \mainpage
 
-Welcome to the GNU Radio TSSYNC Block
+Welcome to the GNU Radio TSSRC Block
 
-This is the intro page for the Doxygen manual generated for the TSSYNC
+This is the intro page for the Doxygen manual generated for the TSSRC
 block (docs/doxygen/other/main_page.dox). Edit it to add more detailed
 documentation about the new GNU Radio modules contained in this
 project.

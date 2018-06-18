@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Free Software Foundation, Inc.
+ * Copyright 2012 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -19,15 +19,18 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_TSSYNC_API_H
-#define INCLUDED_TSSYNC_API_H
+/*
+ * This class gathers together all the test cases for the gr-filter
+ * directory into a single test suite.  As you create new test cases,
+ * add them here.
+ */
 
-#include <gnuradio/attributes.h>
+#include "qa_tssrc.h"
 
-#ifdef gnuradio_tssync_EXPORTS
-#  define TSSYNC_API __GR_ATTR_EXPORT
-#else
-#  define TSSYNC_API __GR_ATTR_IMPORT
-#endif
+CppUnit::TestSuite *
+qa_tssrc::suite()
+{
+  CppUnit::TestSuite *s = new CppUnit::TestSuite("tssrc");
 
-#endif /* INCLUDED_TSSYNC_API_H */
+  return s;
+}

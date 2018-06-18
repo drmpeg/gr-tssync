@@ -18,5 +18,5 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    tssync_tssync_bb.xml DESTINATION share/gnuradio/grc/blocks
+    tssrc_tssrc_bb.xml DESTINATION share/gnuradio/grc/blocks
 )

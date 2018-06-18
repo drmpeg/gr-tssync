@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<block>
+  <name>TS Source</name>
+  <key>tssrc_tssrc_bb</key>
+  <category>File Operators</category>
+  <import>import tssrc</import>
+  <make>tssrc.tssrc_bb($file)</make>
+  <param>
+    <name>File</name>
+    <key>file</key>
+    <value></value>
+    <type>file_open</type>
+  </param>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+
+  <doc>
+    Retrieve TS (MPEG2 transport stream) data from the specified file. 
+
+    Reading is non-blocking. 
+
+    Once the end of the file is reached, the block will output NULL packets (PID 8191) until additional data is found in the TS file.
+
+    Acceptable inputs are files and named pipes (FIFO).
+
+  </doc>
+</block>

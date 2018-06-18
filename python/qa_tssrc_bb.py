@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 
-# Copyright 2017 Ron Economos.
+# Copyright 2017 Matt Zachary.
 # 
 # This is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,9 +21,9 @@
 
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
-import tssync_swig as tssync
+import tssrc_swig as tssrc
 
-class qa_tssync_bb (gr_unittest.TestCase):
+class qa_tssrc_bb (gr_unittest.TestCase):
 
     def setUp (self):
         self.tb = gr.top_block ()
@@ -38,4 +38,4 @@ class qa_tssync_bb (gr_unittest.TestCase):
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_tssync_bb, "qa_tssync_bb.xml")
+    gr_unittest.run(qa_tssrc_bb, "qa_tssrc_bb.xml")
